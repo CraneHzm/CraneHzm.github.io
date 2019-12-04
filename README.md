@@ -1,2 +1,1 @@
-# CraneHzm.github.io
-My personal webpage
+I am Jimmy Hu, this is my personal web page.
