@@ -1,99 +1,95 @@
 <!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DGaze: CNN-Based Gaze Prediction in Dynamic Scenes">
+<meta name="author" content="Zhiming Hu">
+<title>DGaze: CNN-Based Gaze Prediction in Dynamic Scenes</title>
+<!-- Bootstrap core CSS -->
+<link href="./DGaze/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="./DGaze/css/offcanvas.css" rel="stylesheet">
+</head>
+
+	
+<body>
+<div class="container">
+<div class="jumbotron">
+<h2>DGaze: CNN-Based Gaze Prediction in Dynamic Scenes</h2>
+<p class="abstract">Gaze Analysis and Prediction in Dynamic Virtual Scenes</p>
+<p iclass="authors"><a href="https://cranehzm.github.io/">Zhiming Hu</a>, Sheng Li, Congyi Zhang, Kangrui Yi, Guoping Wang, and Dinesh Manocha </p>
+<p><a class="btn btn-primary" href="https://pkueducn-my.sharepoint.com/:f:/g/personal/jimmyhu_pku_edu_cn/EkycED96pMBEuMOyoDTNDYsB58PIX8gms3fRyao1v4CKxA?e=MTx9YN">Dataset</a> <a class="btn btn-primary" href="./DGaze/pdf/hu20_DGaze.pdf">PDF</a> <a class="btn btn-primary" href="./DGaze/ppt/ppt.pdf">PPT</a> <a class="btn btn-primary" href="https://github.com/CraneHzm/DGaze">Code</a> <a class="btn btn-primary" href="https://pkueducn-my.sharepoint.com/:u:/g/personal/jimmyhu_pku_edu_cn/EZ6HlNw0lVJFkEu753DaPk8BDf4uE_nVKyyJJAeYUcKJ1w?e=S7sg5n">Supplemental Material</a> </p> 
+</div>    
 
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DGaze: CNN-Based Gaze Prediction in Dynamic Scenes">
-    <meta name="author" content="Jimmy Hu">
-	
-	
-    <title>DGaze: CNN-Based Gaze Prediction in Dynamic Scenes</title>
-    <!-- Bootstrap core CSS -->
-    <link href="./DGaze/css/bootstrap.min.css" rel="stylesheet">
+<!--teaser image-->	
+<img src="./DGaze/image/teaser.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
 
-    <!-- Custom styles for this template -->
-    <link href="./DGaze/css/offcanvas.css" rel="stylesheet">
 
-  </head>
+<hr>
+<div>
+<h3>Abstract</h3>
+<p>
+We conduct novel analyses of users' gaze behaviors in dynamic virtual scenes and, based on our analyses, we present a novel CNN-based model called DGaze for gaze prediction in HMD-based applications. 
+We first collect 43 users' eye tracking data in 5 dynamic scenes under free-viewing conditions. 
+Next, we perform statistical analysis of our data and observe that dynamic object positions, head rotation velocities, and salient regions are correlated with users' gaze positions. 
+Based on our analysis, we present a CNN-based model (DGaze) that combines object position sequence, head velocity sequence, and saliency features to predict users' gaze positions. 
+Our model can be applied to predict not only realtime gaze positions but also gaze positions in the near future and can achieve better performance than prior method. 
+In terms of realtime prediction, DGaze achieves a 22.0% improvement over prior method in dynamic scenes and obtains an improvement of 9.5% in static scenes, based on using the angular distance as the evaluation metric. 
+We also propose a variant of our model called DGaze_ET that can be used to predict future gaze positions with higher precision by combining accurate past gaze data gathered using an eye tracker. 
+We further analyze our CNN architecture and verify the effectiveness of each component in our model. 
+We apply DGaze to gaze-contingent rendering and a game, and also present the evaluation results from a user study.
+</p>
+</div>
 	
 	
-  <body>
-    <div class="container">
-	
-    <div class="jumbotron">
-      <h2>DGaze: CNN-Based Gaze Prediction in Dynamic Scenes</h2>
-      <p class="abstract">Gaze Analysis and Prediction in Dynamic Virtual Scenes</p>
-      <p iclass="authors"><a href="https://cranehzm.github.io/">Zhiming Hu</a>, Sheng Li, Congyi Zhang, Kangrui Yi, Guoping Wang, and Dinesh Manocha </p>
-      <p><a class="btn btn-primary" href="https://pkueducn-my.sharepoint.com/:f:/g/personal/jimmyhu_pku_edu_cn/EkycED96pMBEuMOyoDTNDYsB58PIX8gms3fRyao1v4CKxA?e=MTx9YN">Dataset</a> <a class="btn btn-primary" href="./DGaze/pdf/hu20_DGaze.pdf">PDF</a> <a class="btn btn-primary" href="./DGaze/ppt/ppt.pdf">PPT</a> <a class="btn btn-primary" href="https://github.com/CraneHzm/DGaze">Code</a> <a class="btn btn-primary" href="https://pkueducn-my.sharepoint.com/:u:/g/personal/jimmyhu_pku_edu_cn/EZ6HlNw0lVJFkEu753DaPk8BDf4uE_nVKyyJJAeYUcKJ1w?e=S7sg5n">Supplemental Material</a> </p> 
+<div class="section">
+<h3>Paper Video</h3>
+<object type='application/x-shockwave-flash' style='width:1024px; height:608px;' data='https://www.youtube.com/v/Ul1TZBgXXik'>
+<param name='movie' value='https://www.youtube.com/v/Ul1TZBgXXik' />
+</object>
+</div>
+
+
+<div class="section">
+<h3>Presentation Video</h3>
+<object type='application/x-shockwave-flash' style='width:1024px; height:608px;' data='https://www.youtube.com/v/RQKNGtL_89M'>
+<param name='movie' value='https://www.youtube.com/v/RQKNGtL_89M' />
+</object>
+</div>	
+
 		
-	</div>    
-	
-    <img src="./DGaze/image/teaser.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+<div class="section">
+<h3>Related work</h3>
+<hr>
+<p>Our related work on gaze analysis and prediction in virtual reality:</p>
+<p><a href="https://cranehzm.github.io/FixationNet.html">FixationNet: Forecasting Eye Fixations in Task-Oriented Virtual Environments</a></p>
+<p><a href="https://cranehzm.github.io/DC.html">Gaze Analysis and Prediction in Virtual Reality</a></p>
+<p><a href="https://cranehzm.github.io/VRIH.html">Temporal Continuity of Visual Attention for Future Gaze Prediction in Immersive Virtual Reality</a></p>    
+<p><a href="https://cranehzm.github.io/SGaze.html">SGaze: A Data-Driven Eye-Head Coordination Model for Realtime Gaze Prediction</a></p>
+</div>
 
-    <hr>
-
-    <div>
-	<h3>Abstract</h3>
-	<p>
-	We conduct novel analyses of users' gaze behaviors in dynamic virtual scenes and, based on our analyses, we present a novel CNN-based model called DGaze for gaze prediction in HMD-based applications. 
-	We first collect 43 users' eye tracking data in 5 dynamic scenes under free-viewing conditions. 
-	Next, we perform statistical analysis of our data and observe that dynamic object positions, head rotation velocities, and salient regions are correlated with users' gaze positions. 
-	Based on our analysis, we present a CNN-based model (DGaze) that combines object position sequence, head velocity sequence, and saliency features to predict users' gaze positions. 
-	Our model can be applied to predict not only realtime gaze positions but also gaze positions in the near future and can achieve better performance than prior method. 
-	In terms of realtime prediction, DGaze achieves a 22.0% improvement over prior method in dynamic scenes and obtains an improvement of 9.5% in static scenes, based on using the angular distance as the evaluation metric. 
-	We also propose a variant of our model called DGaze_ET that can be used to predict future gaze positions with higher precision by combining accurate past gaze data gathered using an eye tracker. 
-	We further analyze our CNN architecture and verify the effectiveness of each component in our model. 
-	We apply DGaze to gaze-contingent rendering and a game, and also present the evaluation results from a user study.
-	</p>
-    </div>
 	
-	
-    <div class="section">
-      <h3>Paper Video</h3>
-		<object type='application/x-shockwave-flash' style='width:1024px; height:608px;' data='https://www.youtube.com/v/Ul1TZBgXXik'>
-			<param name='movie' value='https://www.youtube.com/v/Ul1TZBgXXik' />
-		</object>
-	</div>
-
-    <div class="section">
-      <h3>Presentation Video</h3>
-		<object type='application/x-shockwave-flash' style='width:1024px; height:608px;' data='https://www.youtube.com/v/RQKNGtL_89M'>
-			<param name='movie' value='https://www.youtube.com/v/RQKNGtL_89M' />
-		</object>
-	</div>	
-		
-    <div class="section">
-      <h3>Related work</h3>
-      <hr>
-      <p>Our related work on gaze analysis and prediction in virtual reality:</p>
-      <p><a href="https://cranehzm.github.io/DC.html">Gaze Analysis and Prediction in Virtual Reality</a></p>
-	  <p><a href="https://cranehzm.github.io/VRIH.html">Temporal Continuity of Visual Attention for Future Gaze Prediction in Immersive Virtual Reality</a></p>    
-	  <p><a href="https://cranehzm.github.io/SGaze.html">SGaze: A Data-Driven Eye-Head Coordination Model for Realtime Gaze Prediction</a></p>
-    </div>
-	
-    <h3>Bibtex</h3>
-    <hr>
-    <div class="bibtexsection">
-	@article{hu20_DGaze,
-	  title = {DGaze: CNN-Based Gaze Prediction in Dynamic Scenes},
-	  author = {Hu, Zhiming and Li, Sheng and Zhang, Congyi and Yi, Kangrui and Wang, Guoping and Manocha, Dinesh},
-	  year = {2020},
-	  journal={IEEE Transactions on Visualization and Computer Graphics},
-	  doi = {10.1109/TVCG.2020.2973473},
-	  pages = {1902-1911},
-	}
-    </div>
+<h3>Bibtex</h3>
+<hr>
+<div class="bibtexsection">
+@article{hu20_DGaze,
+  title = {DGaze: CNN-Based Gaze Prediction in Dynamic Scenes},
+  author = {Hu, Zhiming and Li, Sheng and Zhang, Congyi and Yi, Kangrui and Wang, Guoping and Manocha, Dinesh},
+  year = {2020},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  doi = {10.1109/TVCG.2020.2973473},
+  pages = {1902-1911}
+}
+</div>
 		
     
-    <hr>
-      <footer>
-		<p>Send feedback and questions to <a href="https://cranehzm.github.io/">Zhiming Hu</a>.</p>
-        <p>Thanks to Vincent Sitzmann for his website template. © 2017</p>
-      </footer>
+<hr>
+<footer>
+<p>Send feedback and questions to <a href="https://cranehzm.github.io/">Zhiming Hu</a>.</p>
+<p>Thanks to Vincent Sitzmann for his website template. © 2017</p>
+</footer>
 
-    </div><!--/.container-->
-  
 
+</div><!--/.container-->
 </body></html>
