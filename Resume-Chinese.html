@@ -39,7 +39,7 @@
 <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
 <hr>
 <ul class="info-list">
-<!--<li><label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">+86&nbsp;&nbsp;13167397064</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>-->
+<li><label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">+86&nbsp;&nbsp;13167397064</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 <li><label class="left-label" contenteditable="true">主页</label><span class="label-value" contenteditable="true"><a href="https://cranehzm.github.io/" style="color:#820010">cranehzm.github.io</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 <li><label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">jimmyhu (at) pku.edu.cn <!--cranehzm (at) gmail.com!--></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 <!--<li><label class="left-label" contenteditable="true">Github</label><span class="label-value" contenteditable="true"><a href="https://github.com/cranehzm" style="color:#545454">github.com/cranehzm</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>-->
@@ -136,34 +136,41 @@
 </h2>
 <hr>
 <ul class="experience-list">
-<li><p>
+<!--<li><p>
 <strong>EHTask, 2021</strong><br>
 该项目的研究目标是根据用户的眼睛运动和头部运动信息来预测用户正在执行的任务。
 收集了用户在360度VR视频中分别执行自由观察（free viewing）、视觉搜索（visual search）、显著性判断（saliency）、以及运动追踪（track）这四个任务时的眼动和头动数据，并分析了不同任务下眼动和头动的特点。
 提出了一个基于学习的模型EHTask来根据眼动和头动信息预测用户的任务。
-在该项目中，负责实验设计、数据收集与分析、模型设计与实现、以及文章撰写。</p>
-<!--<p><b>项目主页：</b> <a href="https://cranehzm.github.io/EHTask.html" style="color:#820010">cranehzm.github.io/EHTask</a></p><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>-->
+在该项目中，负责实验设计、数据收集与分析、模型设计与实现、以及文章撰写。</p>!
+<p><b>项目主页：</b> <a href="https://cranehzm.github.io/EHTask.html" style="color:#820010">cranehzm.github.io/EHTask</a></p><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>-->
 <li><p>
-<strong>FixationNet, 2020</strong><br>
-该项目的研究目标是预测用户在任务驱动（task-oriented）虚拟现实场景中的眼睛注视位置。
-收集了用户在视觉搜索任务中的注视数据，并进行了统计分析来揭示用户注视数据的特点。
-提出了一个基于学习的视觉注意预测模型FixationNet来预测用户在未来时刻的注视位置。
-在该研究中，主要负责实验设计、数据收集与分析、模型设计与实现、以及文章撰写。
+<strong>FixationNet, 2021</strong><br>
+针对任务驱动虚拟场景，提出了一个基于学习的注视预测模型FixationNet。
+该模型结合了用户过去时刻的眼动位置、任务相关的物体、VR内容的显著性信息、以及用户的头部运动来预测用户在未来时刻的注视。
+创新点在于首次研究了任务驱动虚拟场景中用户注视预测的问题，并提出了一个基于学习的注视预测模型。
+在自由观察场景与任务驱动场景中，该模型的预测效果都显著地好于之前的方法。
 该工作荣获TVCG最佳期刊论文提名奖。</p>
 <p><b>项目主页：</b> <a href="https://cranehzm.github.io/FixationNet.html" style="color:#820010">cranehzm.github.io/FixationNet</a></p><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 <li><p>
-<strong>DGaze, 2019</strong><br>
-该项目专注于动态虚拟场景中用户视觉注意的分析与预测。
-收集了用户在动态虚拟场景中自由观察状态下的眼动追踪数据，运用了统计分析方法来分析用户注视行为的特点。
-提出了一个基于卷积神经网络的视觉注意预测模型DGaze，来预测动态场景中的注视位置。
-对该项目的主要贡献在于实验设计、数据收集、统计分析、模型设计与实现、以及文章撰写。</p>
+<strong>DGaze, 2020</strong><br>
+针对动态虚拟场景，提出了一个基于卷积神经网络的注视预测模型DGaze。
+该模型结合了动态物体位置、用户头部运动、以及场景内容的显著性特征来预测用户的注视位置。
+创新点在于首次提出了针对动态虚拟场景、基于卷积神经网络的注视预测模型，并且首次结合了场景中动态物体的位置信息来预测用户的注视。
+该模型在动态虚拟场景和静态虚拟场景中的预测效果都显著地优于之前的方法。</p>
 <p><b>项目主页：</b> <a href="https://cranehzm.github.io/DGaze.html" style="color:#820010">cranehzm.github.io/DGaze</a></p><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 <li><p>
-<strong>SGaze, 2018</strong><br>
-该项目旨在分析和预测用户在静态虚拟场景中的实时注视位置。
-收集了用户在静态场景中自由观察状态下的注视位置，并使用统计分析方法揭示了注视位置与其他因素之间的相关性。
-提出了一个基于眼动头动协调性（eye-head coordination）的视觉注意预测模型SGaze来预测用户实时的注视位置。
-在该项目中，主要负责实验设计、数据收集、数据分析、数学建模与实现、以及文章撰写。</p>
+<strong>Temporal Continuity of Visual Attention, 2020</strong><br>
+针对动态虚拟场景，提出了一个基于卷积神经网络的注视预测模型DGaze。
+该模型结合了动态物体位置、用户头部运动、以及场景内容的显著性特征来预测用户的注视位置。
+创新点在于首次提出了针对动态虚拟场景、基于卷积神经网络的注视预测模型，并且首次结合了场景中动态物体的位置信息来预测用户的注视。
+该模型在动态虚拟场景和静态虚拟场景中的预测效果都显著地优于之前的方法。</p>
+<p><b>项目主页：</b> <a href="https://cranehzm.github.io/TemporalContinuity" style="color:#820010">cranehzm.github.io/TemporalContinuity</a></p><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+<li><p>
+<strong>SGaze, 2019</strong><br>
+针对静态虚拟场景，提出了一个基于眼动头动协调性的注视预测模型SGaze。
+该模型可以在不使用眼动仪的情况下，预测用户在静态虚拟场景中的注视位置。
+创新点在于首次发现了虚拟现实环境中用户的注视与其头部运动之间的协调性，并首次提出了基于眼动头动协调性的注视预测模型。
+与之前方法相比，该模型具有更高的预测精度。</p>
 <p><b>项目主页：</b> <a href="https://cranehzm.github.io/SGaze.html" style="color:#820010">cranehzm.github.io/SGaze</a></p><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 </ul>
 </div>
@@ -179,8 +186,8 @@
 Andreas Bulling, Sheng Li, Guoping Wang<br>
 IEEE Transactions on Visualization and Computer Graphics, 2021 (<strong>CCF A类</strong>)</p><br>
 
-<!--<p contenteditable="true"><a href="https://cranehzm.github.io/DC.html"><img width="10%" src="./index/image/DC.png" style="FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 10px; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px;" alt=""></a>
-<a href="https://cranehzm.github.io/DC.html" style="color:#545454"><strong>Gaze Analysis and Prediction in Virtual Reality</strong><br></a>
+<!--<p contenteditable="true"><a href="https://cranehzm.github.io/GazeAnalysis.html"><img width="10%" src="./index/image/GazeAnalysis.png" style="FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 10px; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px;" alt=""></a>
+<a href="https://cranehzm.github.io/GazeAnalysis.html" style="color:#545454"><strong>Gaze Analysis and Prediction in Virtual Reality</strong><br></a>
 Zhiming Hu<br>
 Proc. IEEE VR Abstracts and Workshops (VRW), 2020</p><br>-->
 
@@ -190,8 +197,8 @@ Proc. IEEE VR Abstracts and Workshops (VRW), 2020</p><br>-->
 Sheng Li, Congyi Zhang, Kangrui Yi, Guoping Wang, Dinesh Manocha<br>
 IEEE Transactions on Visualization and Computer Graphics, 2020 (<strong>CCF A类</strong>)</p><br>		
 
-<p contenteditable="true"><a href="https://cranehzm.github.io/VRIH.html"><img width="10%" src="./index/image/VRIH.png" style="FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 10px; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px;" alt=""></a>
-<a href="https://cranehzm.github.io/VRIH.html" style="color:#545454"><strong>Temporal continuity of visual attention for future gaze prediction in immersive virtual reality</strong><br></a>
+<p contenteditable="true"><a href="https://cranehzm.github.io/TemporalContinuity.html"><img width="10%" src="./index/image/TemporalContinuity.png" style="FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 10px; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px;" alt=""></a>
+<a href="https://cranehzm.github.io/TemporalContinuity.html" style="color:#545454"><strong>Temporal continuity of visual attention for future gaze prediction in immersive virtual reality</strong><br></a>
 <a class="a-int" href="https://cranehzm.github.io/" style="color:#820010">Zhiming Hu</a>,
 Sheng Li, Meng Gai<br>
 Virtual Reality & Intelligent Hardware, 2020</p><br>
