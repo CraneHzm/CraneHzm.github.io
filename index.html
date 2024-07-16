@@ -197,32 +197,31 @@ The long-term research goal is to develop a human-centred intelligent interactiv
 
     <p class="pub_tags">
         
-        <span class="button bg_greydark"><a id="pub_abstract_sh_zhang24_mouse2vec" class="pub_show" onclick="pub_showhide('zhang24_mouse2vec','pub_abstract')">Abstract</a></span>
+        <span class="button bg_greydark"><a id="pub_abstract_sh_zhang24_dismouse" class="pub_show" onclick="pub_showhide('zhang24_dismouse','pub_abstract')">Abstract</a></span>
                 
-        <span class="button bg_greydark"><a id="pub_links_sh_zhang24_mouse2vec" class="pub_show" onclick="pub_showhide('zhang24_mouse2vec','pub_links')">Links</a></span>
+        <span class="button bg_greydark"><a id="pub_links_sh_zhang24_dismouse" class="pub_show" onclick="pub_showhide('zhang24_dismouse','pub_links')">Links</a></span>
         
-        <span class="button bg_greydark"><a id="pub_bibtex_sh_zhang24_mouse2vec" class="pub_show" onclick="pub_showhide('zhang24_mouse2vec','pub_bibtex')">BibTeX</a></span>
+        <span class="button bg_greydark"><a id="pub_bibtex_sh_zhang24_dismouse" class="pub_show" onclick="pub_showhide('zhang24_dismouse','pub_bibtex')">BibTeX</a></span>
 
-        <span class="button bg_greydark margin-left-10"><a href="./zhang24_mouse2vec.html">Project</a></span>
+        <span class="button bg_greydark margin-left-10"><a href="./zhang24_dismouse.html">Project</a></span>
         
     </p>
 	
-    <div class="pub_abstract bg_grey" id="pub_abstract_zhang24_mouse2vec" style="display:none;">
-        The mouse is a pervasive input device used for a wide range of interactive applications. However, computational modelling of mouse behaviour typically requires time-consuming design and extraction of handcrafted features, or approaches that are application-specific. We instead propose Mouse2Vec – a novel self-supervised method designed to learn semantic representations of mouse behaviour that are reusable across users and applications. Mouse2Vec uses a Transformer-based encoder-decoder architecture, which is specifically geared for mouse data: During pretraining, the encoder learns an embedding of input mouse trajectories while the decoder reconstructs the input and simultaneously detects mouse click events. We show that the representations learned by our method can identify interpretable mouse behaviour clusters and retrieve similar mouse trajectories. We also demonstrate on three sample downstream tasks that the representations can be practically used to augment mouse data for training supervised methods and serve as an effective feature extractor.
+    <div class="pub_abstract bg_grey" id="pub_abstract_zhang24_dismouse" style="display:none;">
+	Mouse movement data contain rich information about users, performed tasks, and user interfaces, but separating the respective components remains challenging and unexplored. As a first step to address this challenge, we propose DisMouse – the first method to disentangle user-specific and user-independent information and stochastic variations from mouse movement data. At the core of our method is an autoencoder trained in a semi-supervised fashion, consisting of a self-supervised denoising diffusion process and a supervised contrastive user identification module. Through evaluations on three datasets, we show that DisMouse 1) captures complementary information of mouse input, hence providing an interpretable framework for modelling mouse movements, 2) can be used to produce refined features, thus enabling various applications such as personalised and variable mouse data generation, and 3) generalises across different datasets. Taken together, our results underline the significant potential of disentangled representation learning for explainable, controllable, and generalised mouse behaviour modelling.
     </div>
-
-    <div class="pub_links bg_grey" id="pub_links_zhang24_mouse2vec" style="display:none;">
-        <div class="pub_links">                            
-	<i class="fa fa-file-pdf"></i><p>Paper: <a class="pub_list" href="./zhang24_mouse2vec/pdf/zhang24_mouse2vec.pdf">paper.pdf</a></p>                               
+	
+    <div class="pub_links bg_grey" id="pub_links_zhang24_dismouse" style="display:none;">
+        <div class="pub_links">
+	<i class="fa fa-file-pdf"></i><p>Paper: <a class="pub_list" href="./zhang24_dismouse/pdf/zhang24_dismouse.pdf">paper.pdf</a></p>                               
         </div>
     </div>
-<div class="pub_bibtex bg_grey" id="pub_bibtex_zhang24_mouse2vec" style="display:none;">@inproceedings{zhang24_mouse2vec,
-	title = {Mouse2Vec: Learning Reusable Semantic Representations of Mouse Behaviour},
-	author = {Zhang, Guanhua and Hu, Zhiming and B{\^a}ce, Mihai and Bulling, Andreas},
+<div class="pub_bibtex bg_grey" id="pub_bibtex_zhang24_dismouse" style="display:none;">@inproceedings{zhang24_dismouse,
+	title = {DisMouse: Disentangling Information from Mouse Movement Data},
+	author = {Zhang, Guanhua and Hu, Zhiming and Bulling, Andreas},
 	year = {2024},
-	pages = {1--17},
-	booktitle = {Proc. ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)},
-	doi = {10.1145/3613904.3642141}}
+	pages = {1--13},
+	booktitle = {Proc. ACM Symposium on User Interface Software and Technology (UIST)}}
 </div>
 
 </div>
